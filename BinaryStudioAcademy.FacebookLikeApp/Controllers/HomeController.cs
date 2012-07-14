@@ -19,5 +19,10 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Controllers
         {
             return View();
         }
+
+        public ActionResult Profile()
+        {
+            return View();
+        }
     }
 }
