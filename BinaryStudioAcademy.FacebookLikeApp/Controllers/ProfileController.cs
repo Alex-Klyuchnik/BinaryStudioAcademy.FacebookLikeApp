@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BinaryStudioAcademy.FacebookLikeApp.Models;
 
 namespace BinaryStudioAcademy.FacebookLikeApp.Controllers
 {
@@ -10,7 +11,7 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Controllers
     {
         //
         // GET: /Profile/
-
+        
         public ActionResult Index()
         {
             return View();
@@ -21,10 +22,17 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Edit()
-    {
-        return View();
+        {
+            
+            return View();
     }
+        [HttpPost]
+        public ActionResult Edit(User user )
+        {
+            return View("Index", user);
+        }
 
     }
 }
