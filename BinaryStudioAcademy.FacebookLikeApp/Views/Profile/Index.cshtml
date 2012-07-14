@@ -16,14 +16,15 @@
        <br/>
        Gender: @Model.gender
        <br/>
-       DoB: @Model.dateOfBirth
+       DoB: @Model.dateOfBirth.ToString("dd.MM.yyyy")
        <br/>
        Marital status: @Model.maritalStatus
        </html>
    }
      
 </div>
-
+<br/>
+<br/>
 @Html.ActionLink("Add a friend", "AddFriend", "Profile")
 <br/>
 @Html.ActionLink("Edit your profile","Edit","Profile")
