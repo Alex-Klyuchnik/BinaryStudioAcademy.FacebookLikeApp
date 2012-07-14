@@ -1,8 +1,13 @@
-﻿@{
+﻿@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" />
+    <input type="submit" value="OK" />
+}
+@{
     ViewBag.Title = "About Us";
 }
 
 <h2>About</h2>
 <p>
-     Put content here.
+     It will be a new facebook soon.
 </p>

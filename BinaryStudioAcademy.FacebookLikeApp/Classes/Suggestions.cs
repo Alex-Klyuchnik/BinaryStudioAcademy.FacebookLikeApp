@@ -8,9 +8,10 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Classes
 {
     public class Suggestions
     {
-        public void Accept()
+        public void Accept(User user, User suggestedFriend)
         {
-             throw new NotImplementedException();
+            //AddFriend.SendRequest(suggestedFriend, user);
+            throw new NotImplementedException();
         }
 
         public void RefusePermanently()
@@ -23,7 +24,7 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Classes
             throw new NotImplementedException();
         }
 
-        public IList<User> SearchFriendIntersection(User user)
+        public IEnumerable<User> SearchFriendIntersection(User user)
         {
             //var friends = user.friends.AsEnumerable(); 
             throw new NotImplementedException();
