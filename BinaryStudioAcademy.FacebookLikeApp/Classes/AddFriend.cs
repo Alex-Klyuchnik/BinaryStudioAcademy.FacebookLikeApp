@@ -8,7 +8,7 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Classes
 {
     public class AddFriend 
     {
-        public void Add (User friend, User user)
+        private static void Add (User friend, User user)
         {
            user.friends.Add(friend);
         }
@@ -16,6 +16,15 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Classes
         public void Delete(User friend, User user)
         {
             user.friends.Remove(friend);
+        }
+        public void SendRequest(User friend, User user)
+        {
+            throw new NotImplementedException();
+        }
+        public void AcceptRequest(User friend, User user)
+        {
+            Add(friend, user);
+            Add(user,friend);
         }
     }
 }
