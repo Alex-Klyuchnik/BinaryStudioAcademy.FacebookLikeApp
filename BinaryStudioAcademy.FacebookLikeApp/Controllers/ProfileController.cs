@@ -21,5 +21,10 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Controllers
             return View();
         }
 
+        public ActionResult Edit()
+    {
+        return View();
+    }
+
     }
 }
