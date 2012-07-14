@@ -17,14 +17,22 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Classes
         {
             user.friends.Remove(friend);
         }
+        
         public void SendRequest(User friend, User user)
         {
-            throw new NotImplementedException();
+            friend.requestedFriendship.Add(user);
         }
+        
         public void AcceptRequest(User friend, User user)
         {
             Add(friend, user);
             Add(user,friend);
+            user.requestedFriendship.Remove(friend);
+        }
+
+        public void DeclineRequest(User friend, User user)
+        {
+            user.requestedFriendship.Remove(friend);
         }
     }
 }
