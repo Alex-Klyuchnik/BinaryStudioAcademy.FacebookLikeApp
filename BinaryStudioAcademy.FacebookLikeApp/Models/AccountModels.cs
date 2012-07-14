@@ -67,14 +67,27 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Models
 
     public class User : IIdentifiable
     {
-        #region Члены IIdentifiable
+        public int id { get; set; }
 
-        public int id
-        {
-            get { throw new NotImplementedException(); }
-        }
+        public string fullName { get; set; }
 
-        #endregion
+        public string email { get; set; }
+
+        public string gender { get; set; }
+
+        public DateTime dateOfBirth { get; set; }
+
+        public string maritalStatus { get; set; }
+
+        public IList<Interests> interests { get; set; }
+
+        public IList<User> friends { get; set; }
+
+
     }
 
+    public class Interests
+    {
+     
+    }
 }
