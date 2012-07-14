@@ -64,4 +64,17 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Models
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
+
+    public class User : IIdentifiable
+    {
+        #region Члены IIdentifiable
+
+        public int id
+        {
+            get { throw new NotImplementedException(); }
+        }
+
+        #endregion
+    }
+
 }
