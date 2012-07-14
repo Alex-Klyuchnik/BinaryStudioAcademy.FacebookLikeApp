@@ -1,5 +1,5 @@
 ﻿using BinaryStudioAcademy.FacebookLikeApp.Classes;
-using NUnit;
+using NSubstitute;
 using Microsoft.VisualStudio.TestTools.UnitTesting.Web;
 using BinaryStudioAcademy.FacebookLikeApp.Models;
 using NUnit.Framework;
