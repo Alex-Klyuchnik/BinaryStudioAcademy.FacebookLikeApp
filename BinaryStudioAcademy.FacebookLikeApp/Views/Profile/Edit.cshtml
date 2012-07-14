@@ -1,5 +1,25 @@
-﻿@{
+﻿@model BinaryStudioAcademy.FacebookLikeApp.Models.User
+
+@{
     ViewBag.Title = "Edit";
 }
 
 <h2>Edit</h2>
+
+
+<body>
+@using (Html.BeginForm()) {
+<p>Your full name: @Html.TextBoxFor(x => x.fullName) </p>
+<p>Your email: @Html.TextBoxFor(x => x.email)</p>
+<p>Your date of birth: @Html.TextBoxFor(x => x.dateOfBirth)</p>
+<p>Your marital status: @Html.TextBoxFor(x => x.maritalStatus)</p>
+<p>
+Your gender
+@Html.DropDownListFor(x => x.gender, new[] {
+new SelectListItem() {Text = "Male", Value = "Male"},
+new SelectListItem() {Text = "Female", Value = "Female"}
+}, "Choose an option")
+</p>
+<input type="submit" value="Submit profile" />
+}
+</body>
