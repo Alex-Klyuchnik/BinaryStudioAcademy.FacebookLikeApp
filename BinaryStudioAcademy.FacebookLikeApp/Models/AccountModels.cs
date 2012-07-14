@@ -79,15 +79,9 @@ namespace BinaryStudioAcademy.FacebookLikeApp.Models
 
         public string maritalStatus { get; set; }
 
-        public IList<Interests> interests { get; set; }
+        public IList<string> interests { get; set; }
 
         public IList<User> friends { get; set; }
-
-
     }
 
-    public class Interests
-    {
-     
-    }
 }
